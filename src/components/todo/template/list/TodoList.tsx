@@ -1,3 +1,4 @@
+import Nodata from 'components/common/Nodata';
 import { Itodo } from 'components/todo/TodoService';
 import React from 'react';
 import styled from 'styled-components';
@@ -17,6 +18,14 @@ interface TodoListProps {
 }
 
 const TodoList = ({ toggleTodo, removeTodo, todos }: TodoListProps) => {
+  if (todos?.length === 0) {
+    return (
+      <TodoListBlock>
+        <Nodata />
+      </TodoListBlock>
+    );
+  }
+
   return (
     <TodoListBlock>
       {todos &&
