@@ -191,7 +191,7 @@ const TodoCreate = ({ nextId, createTodo, incrementNextId }: TodoCreateProps) =>
             </div>
             <div>
               <DatePickerLabel isAlert={targetDate.isAlert}>Target Date</DatePickerLabel>
-              <DatePicker onChange={onChange} />
+              <DatePicker onChange={onChange} style={{ width: '75%' }} />
             </div>
           </InsertForm>
           {modal.isShown && <Modal title={modal.title} message={modal.message} hide={hideModal} isShown={modal.isShown} />}
