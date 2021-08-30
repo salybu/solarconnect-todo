@@ -27,5 +27,5 @@ $ yarn start
 
 ## 적용기술
 
-React, Hook, Styled-Components
+React, Hook, antd
 
